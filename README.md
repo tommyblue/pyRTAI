@@ -116,5 +116,7 @@ If the signal have more then a single channel you have to cycle **signals**
 ## API documentation
 
 The code was documented using Doxygen.
+
 HTML docs are in *./doc/html*. An updated mirror is hosted by Github at [http://tommyblue.github.com/pyRTAI](http://tommyblue.github.com/pyRTAI)
+
 Latex docs can be found into *./doc/latex*
