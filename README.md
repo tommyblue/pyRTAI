@@ -1,6 +1,6 @@
 # pyRTAI
 
-Python library to interact with [RTAI - the RealTime Application Interface for Linux from DIAPM](https://www.rtai.org/)
+Python library designed to interact with [RTAI - the RealTime Application Interface for Linux from DIAPM](https://www.rtai.org/)
 
 ## Configuration
 
