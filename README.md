@@ -2,6 +2,10 @@
 
 Python library to interact with [RTAI - the RealTime Application Interface for Linux from DIAPM](https://www.rtai.org/)
 
+## Configuration
+
+Configure **pyrtai/defaults.cfg**
+
 ## Use
 
 ### Standard connection to a target
