@@ -2,9 +2,14 @@
 
 Python library designed to interact with [RTAI - the RealTime Application Interface for Linux from DIAPM](https://www.rtai.org/)
 
-## Configuration
+## Installation and configuration
 
-Configure **pyrtai/defaults.cfg**
+Just clone this repository:
+
+    git clone git@github.com:tommyblue/pyRTAI.git
+    cd pyRTAI
+
+Then configure **pyrtai/defaults.cfg** and launch python console to start work with the library.
 
 ## Use
 
