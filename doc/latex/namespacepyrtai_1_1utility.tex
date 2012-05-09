@@ -1,0 +1,66 @@
+\hypertarget{namespacepyrtai_1_1utility}{
+\section{pyrtai\-:\-:utility \-Namespace \-Reference}
+\label{namespacepyrtai_1_1utility}\index{pyrtai\-::utility@{pyrtai\-::utility}}
+}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacepyrtai_1_1utility_a58a6904c0a7c5890e90137abd905feac}{get\-State\-From\-Response}
+\begin{DoxyCompactList}\small\item\em \-Parses an integer state value which, converted into binary value, represents 4 states. \end{DoxyCompactList}\item 
+def \hyperlink{namespacepyrtai_1_1utility_a5bfae0e64bb4701f2bfc4a59838ebdfc}{linesplit}
+\begin{DoxyCompactList}\small\item\em \-Implements readline() with sockets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{namespacepyrtai_1_1utility_a58a6904c0a7c5890e90137abd905feac}{
+\index{pyrtai\-::utility@{pyrtai\-::utility}!get\-State\-From\-Response@{get\-State\-From\-Response}}
+\index{get\-State\-From\-Response@{get\-State\-From\-Response}!pyrtai::utility@{pyrtai\-::utility}}
+\subsubsection[{get\-State\-From\-Response}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::utility\-::get\-State\-From\-Response (
+\begin{DoxyParamCaption}
+\item[{}]{int\-\_\-state}
+\end{DoxyParamCaption}
+)}}
+\label{namespacepyrtai_1_1utility_a58a6904c0a7c5890e90137abd905feac}
+
+
+\-Parses an integer state value which, converted into binary value, represents 4 states. 
+
+\-The 4 states are (array indexes)\-: 0 -\/ \-Target running 1 -\/ \-Target connected 2 -\/ \-Target exists 3 -\/ \-Error occurred
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em int\-\_\-state} & \-The integer value of the state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-An hash containing explained states 
+\end{DoxyReturn}
+
+
+\-Definition at line 13 of file utility.\-py.
+
+\hypertarget{namespacepyrtai_1_1utility_a5bfae0e64bb4701f2bfc4a59838ebdfc}{
+\index{pyrtai\-::utility@{pyrtai\-::utility}!linesplit@{linesplit}}
+\index{linesplit@{linesplit}!pyrtai::utility@{pyrtai\-::utility}}
+\subsubsection[{linesplit}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::utility\-::linesplit (
+\begin{DoxyParamCaption}
+\item[{}]{socket}
+\end{DoxyParamCaption}
+)}}
+\label{namespacepyrtai_1_1utility_a5bfae0e64bb4701f2bfc4a59838ebdfc}
+
+
+\-Implements readline() with sockets. 
+
+\-This method returns data with yield, so it can be called within a cycle 
+\begin{DoxyParams}{\-Parameters}
+{\em socket} & \-The data socket \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The read string 
+\end{DoxyReturn}
+
+
+\-Definition at line 29 of file utility.\-py.
+

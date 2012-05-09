@@ -1,0 +1,144 @@
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector}{
+\section{pyrtai\-:\-:data\-\_\-collector\-:\-:\-Data\-Collector \-Class \-Reference}
+\label{classpyrtai_1_1data__collector_1_1_data_collector}\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+}
+
+
+\-Inherits \-Thread.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpyrtai_1_1data__collector_1_1_data_collector_aa03f22027ac2ecdf41d86e79b42cfce9}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em \-Initializes the object setting the queue and the thread. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1data__collector_1_1_data_collector_a59f06d7c9085e6aac32a87f4e328c8e3}{stop}
+\begin{DoxyCompactList}\small\item\em \-Stops thread. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1data__collector_1_1_data_collector_ae84a574793234cd60a4d22619373f3e7}{run}
+\begin{DoxyCompactList}\small\item\em \-A beta method to split the socket into lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpyrtai_1_1data__collector_1_1_data_collector_ab4d80611cc3daff707e6f6609f67b1ff}{queue}
+\begin{DoxyCompactList}\small\item\em \-The datastream queue. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1data__collector_1_1_data_collector_aa8d7188de5a211402dcb5eea87ea6b14}{name}
+\item 
+\hyperlink{classpyrtai_1_1data__collector_1_1_data_collector_ab597fdd068366adc163f381b44524235}{socket}
+\begin{DoxyCompactList}\small\item\em \-The socket where the signals are read. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1data__collector_1_1_data_collector_a37fdb9d276f8b2ae1f50d16e10245c38}{done}
+\begin{DoxyCompactList}\small\item\em \-Flag to stop the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector_aa03f22027ac2ecdf41d86e79b42cfce9}{
+\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!pyrtai::data_collector::DataCollector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::data\-\_\-collector\-::\-Data\-Collector\-::\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{address, }
+\item[{}]{port, }
+\item[{}]{queue}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1data__collector_1_1_data_collector_aa03f22027ac2ecdf41d86e79b42cfce9}
+
+
+\-Initializes the object setting the queue and the thread. 
+
+
+
+\-Definition at line 19 of file data\-\_\-collector.\-py.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector_ae84a574793234cd60a4d22619373f3e7}{
+\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}!run@{run}}
+\index{run@{run}!pyrtai::data_collector::DataCollector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::data\-\_\-collector\-::\-Data\-Collector\-::run (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1data__collector_1_1_data_collector_ae84a574793234cd60a4d22619373f3e7}
+
+
+\-A beta method to split the socket into lines. 
+
+
+
+\-Definition at line 32 of file data\-\_\-collector.\-py.
+
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector_a59f06d7c9085e6aac32a87f4e328c8e3}{
+\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}!stop@{stop}}
+\index{stop@{stop}!pyrtai::data_collector::DataCollector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::data\-\_\-collector\-::\-Data\-Collector\-::stop (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1data__collector_1_1_data_collector_a59f06d7c9085e6aac32a87f4e328c8e3}
+
+
+\-Stops thread. 
+
+
+
+\-Definition at line 28 of file data\-\_\-collector.\-py.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector_a37fdb9d276f8b2ae1f50d16e10245c38}{
+\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}!done@{done}}
+\index{done@{done}!pyrtai::data_collector::DataCollector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+\subsubsection[{done}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::data\-\_\-collector\-::\-Data\-Collector\-::done}}}
+\label{classpyrtai_1_1data__collector_1_1_data_collector_a37fdb9d276f8b2ae1f50d16e10245c38}
+
+
+\-Flag to stop the thread. 
+
+
+
+\-Definition at line 28 of file data\-\_\-collector.\-py.
+
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector_aa8d7188de5a211402dcb5eea87ea6b14}{
+\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}!name@{name}}
+\index{name@{name}!pyrtai::data_collector::DataCollector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::data\-\_\-collector\-::\-Data\-Collector\-::name}}}
+\label{classpyrtai_1_1data__collector_1_1_data_collector_aa8d7188de5a211402dcb5eea87ea6b14}
+
+
+\-Definition at line 19 of file data\-\_\-collector.\-py.
+
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector_ab4d80611cc3daff707e6f6609f67b1ff}{
+\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}!queue@{queue}}
+\index{queue@{queue}!pyrtai::data_collector::DataCollector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+\subsubsection[{queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::data\-\_\-collector\-::\-Data\-Collector\-::queue}}}
+\label{classpyrtai_1_1data__collector_1_1_data_collector_ab4d80611cc3daff707e6f6609f67b1ff}
+
+
+\-The datastream queue. 
+
+
+
+\-Definition at line 19 of file data\-\_\-collector.\-py.
+
+\hypertarget{classpyrtai_1_1data__collector_1_1_data_collector_ab597fdd068366adc163f381b44524235}{
+\index{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}!socket@{socket}}
+\index{socket@{socket}!pyrtai::data_collector::DataCollector@{pyrtai\-::data\-\_\-collector\-::\-Data\-Collector}}
+\subsubsection[{socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::data\-\_\-collector\-::\-Data\-Collector\-::socket}}}
+\label{classpyrtai_1_1data__collector_1_1_data_collector_ab597fdd068366adc163f381b44524235}
+
+
+\-The socket where the signals are read. 
+
+
+
+\-Definition at line 19 of file data\-\_\-collector.\-py.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/drwolf/\-Devel/py\-R\-T\-A\-I/pyrtai/\hyperlink{data__collector_8py}{data\-\_\-collector.\-py}\end{DoxyCompactItemize}

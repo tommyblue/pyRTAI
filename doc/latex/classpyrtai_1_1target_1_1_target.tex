@@ -1,0 +1,636 @@
+\hypertarget{classpyrtai_1_1target_1_1_target}{
+\section{pyrtai\-:\-:target\-:\-:\-Target \-Class \-Reference}
+\label{classpyrtai_1_1target_1_1_target}\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_ad89e94e6a5cf413af9ad91dd9b83670b}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classpyrtai_1_1target_1_1_target}{\-Target} initializer. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a9674793e75bd351e481791b881c0f9da}{get\-Info}
+\begin{DoxyCompactList}\small\item\em \-Prints a summary of the target and its status \-T\-O\-D\-O\-: \-Decidere che informazioni restituire. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_ab0cfc0e5b6ac03cf654879045d7b9a13}{setup\-\_\-data\-\_\-threads}
+\begin{DoxyCompactList}\small\item\em \-Setups the queue and the threads needed to read the data stream. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_ae0dd80c9557257d45fbae2d7d7a18ddf}{stop\-\_\-data\-\_\-threads}
+\begin{DoxyCompactList}\small\item\em \-Stops the data threads. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a792bae526bddd673ef6e07f4c57930b0}{add\-Observer}
+\begin{DoxyCompactList}\small\item\em \-Add a new observer \char`\"{}update\char`\"{} method to the list of observers. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_abe0602fd40e54c1ff92d7310897072ac}{remove\-Observer}
+\begin{DoxyCompactList}\small\item\em \-Removes the observer. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a8f84994a13eda611de5dc4dc357ba060}{connect}
+\begin{DoxyCompactList}\small\item\em \-Connect to the target server. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a55c7fb6e7f872139695fad3be58fe811}{get\-Slave}
+\begin{DoxyCompactList}\small\item\em \-Checks if master and if affirmative, returns the slave. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a6b88fd3e02bd52f9d9596aecaa15414d}{disconnect}
+\begin{DoxyCompactList}\small\item\em \-Disconnects from the \-X\-M\-L-\/\-R\-P\-C server. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a7a472990dd9d3b1d7c0d3f2aa63ec7a1}{stop}
+\begin{DoxyCompactList}\small\item\em \-Stops target server. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a12ad20665782eb0e8eac3ea797fbae57}{close}
+\begin{DoxyCompactList}\small\item\em \-Closes the session. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a8f2a7582fcb34a5244bb5281b34feb47}{halt}
+\begin{DoxyCompactList}\small\item\em \-Stops the target \-This method closes the data threads (if they exist) then closes the session. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a9a61f08b90d8512663f2c74545943228}{start}
+\begin{DoxyCompactList}\small\item\em \-Starts the connected target. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_aadaa0ae2a3535637dde24e5a822e50e7}{start\-Data}
+\begin{DoxyCompactList}\small\item\em \-Starts data transfer for the specified signal. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a3419fad652e47f0e1b6adbd7c2f3c76c}{stop\-Data}
+\begin{DoxyCompactList}\small\item\em \-Stops (all) data transfers. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_ac60d73c462fc3988624a36301e7f885f}{get\-Signal\-Structure}
+\begin{DoxyCompactList}\small\item\em \-Get the structure of the signals. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a2a8d46776e9b4c03081bb4426d849517}{set\-Parameters}
+\begin{DoxyCompactList}\small\item\em \-Sends new parameters to the server. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a5f5a51ab29bf80e6ff26074e15af49f2}{get\-Parameters}
+\begin{DoxyCompactList}\small\item\em \-Get the parameters from the target server. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1target_1_1_target_a9d6334d4c1ada8dae518f56ccf8fddab}{set\-Param}
+\begin{DoxyCompactList}\small\item\em \-Interface to set a single param. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_a81312c5e774f702d956b5e21f76b8d48}{config}
+\begin{DoxyCompactList}\small\item\em \-A \hyperlink{classpyrtai_1_1configurator_1_1_configurator}{configurator\-::\-Configurator} object. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_a615b77c2475db26f9055078ab7f15f75}{is\-\_\-connected}
+\begin{DoxyCompactList}\small\item\em \-Checks if the \hyperlink{classpyrtai_1_1target_1_1_target}{\-Target} is connected or not. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_a38d056a202885bac1459328108d600fa}{is\-\_\-slave}
+\begin{DoxyCompactList}\small\item\em \-Shows if this is a slave target. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_aae04036f71a3a512b5461bf97692e7e9}{parameters}
+\begin{DoxyCompactList}\small\item\em \-The target parameters. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_a0d458e6387a385c285b33a87e645caee}{datastream\-\_\-queue}
+\begin{DoxyCompactList}\small\item\em \-The queue where \-Data\-Collector thread puts data and observers get it. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_a6f53ef231f9caced4bc8ee94404f4550}{datastream\-\_\-poller}
+\begin{DoxyCompactList}\small\item\em \-The \-Data\-Poller thread. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_a2e3d692af2e90764b0835991cf538568}{datastream\-\_\-collector}
+\begin{DoxyCompactList}\small\item\em \-The \-Data\-Collector thread. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1target_1_1_target_ab10614e38c19644cfbd81ec3424df5c7}{connection}
+\begin{DoxyCompactList}\small\item\em \-A \hyperlink{classpyrtai_1_1connector_1_1_connector}{connector\-::\-Connector} instance used to send commands to \-X\-M\-L-\/\-R\-P\-C connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classpyrtai_1_1target_1_1_target_ad89e94e6a5cf413af9ad91dd9b83670b}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{slave = {\ttfamily \-False}, }
+\item[{}]{protocol = {\ttfamily \-None}, }
+\item[{}]{address = {\ttfamily \-None}, }
+\item[{}]{port = {\ttfamily \-None}, }
+\item[{}]{target\-\_\-name = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_ad89e94e6a5cf413af9ad91dd9b83670b}
+
+
+\hyperlink{classpyrtai_1_1target_1_1_target}{\-Target} initializer. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classpyrtai_1_1target_1_1_target_a792bae526bddd673ef6e07f4c57930b0}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!add\-Observer@{add\-Observer}}
+\index{add\-Observer@{add\-Observer}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{add\-Observer}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::add\-Observer (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{update\-\_\-method, }
+\item[{}]{sample\-\_\-time, }
+\item[{}]{decimation = {\ttfamily \-None}, }
+\item[{}]{channel = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a792bae526bddd673ef6e07f4c57930b0}
+
+
+\-Add a new observer \char`\"{}update\char`\"{} method to the list of observers. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em update\-\_\-method} & \-Is the method of the observer which will be called when new data arrives. \-The method name is arbitrary, but it must accept a string parameter \\
+\hline
+{\em channel} & \-The optional channel to register the observer to \\
+\hline
+{\em sample\-\_\-time} & \-The sample time of the signal \\
+\hline
+{\em decimation} & \-The decimation to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The \-I\-D of the observer, to be used to remove the observer 
+\end{DoxyReturn}
+
+
+\-Definition at line 134 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a12ad20665782eb0e8eac3ea797fbae57}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!close@{close}}
+\index{close@{close}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::close (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a12ad20665782eb0e8eac3ea797fbae57}
+
+
+\-Closes the session. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 204 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a8f84994a13eda611de5dc4dc357ba060}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!connect@{connect}}
+\index{connect@{connect}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::connect (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{password = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a8f84994a13eda611de5dc4dc357ba060}
+
+
+\-Connect to the target server. 
+
+\-Checks if master or server and call the right method on \hyperlink{classpyrtai_1_1connector_1_1_connector}{connector\-::\-Connector} 
+\begin{DoxyParams}{\-Parameters}
+{\em password} & \-The (optional) password to catch a running master connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 147 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a6b88fd3e02bd52f9d9596aecaa15414d}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::disconnect (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a6b88fd3e02bd52f9d9596aecaa15414d}
+
+
+\-Disconnects from the \-X\-M\-L-\/\-R\-P\-C server. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 178 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a9674793e75bd351e481791b881c0f9da}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!get\-Info@{get\-Info}}
+\index{get\-Info@{get\-Info}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{get\-Info}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::get\-Info (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a9674793e75bd351e481791b881c0f9da}
+
+
+\-Prints a summary of the target and its status \-T\-O\-D\-O\-: \-Decidere che informazioni restituire. 
+
+
+
+\-Definition at line 64 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a5f5a51ab29bf80e6ff26074e15af49f2}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!get\-Parameters@{get\-Parameters}}
+\index{get\-Parameters@{get\-Parameters}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{get\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::get\-Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a5f5a51ab29bf80e6ff26074e15af49f2}
+
+
+\-Get the parameters from the target server. 
+
+\begin{DoxyReturn}{\-Returns}
+\-An array of params. \-Every param is an hash 
+\end{DoxyReturn}
+
+
+\-Definition at line 261 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_ac60d73c462fc3988624a36301e7f885f}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!get\-Signal\-Structure@{get\-Signal\-Structure}}
+\index{get\-Signal\-Structure@{get\-Signal\-Structure}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{get\-Signal\-Structure}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::get\-Signal\-Structure (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_ac60d73c462fc3988624a36301e7f885f}
+
+
+\-Get the structure of the signals. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The structure of the signals or \-False if the target has no signals 
+\end{DoxyReturn}
+
+
+\-Definition at line 250 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a55c7fb6e7f872139695fad3be58fe811}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!get\-Slave@{get\-Slave}}
+\index{get\-Slave@{get\-Slave}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{get\-Slave}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::get\-Slave (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{target\-\_\-name = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a55c7fb6e7f872139695fad3be58fe811}
+
+
+\-Checks if master and if affirmative, returns the slave. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em target\-\_\-name} & \-The target to connect to. \-If \-None gets the name from the default configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The slave \hyperlink{classpyrtai_1_1target_1_1_target}{\-Target} or \-False if not a master target 
+\end{DoxyReturn}
+
+
+\-Definition at line 162 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a8f2a7582fcb34a5244bb5281b34feb47}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!halt@{halt}}
+\index{halt@{halt}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{halt}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::halt (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a8f2a7582fcb34a5244bb5281b34feb47}
+
+
+\-Stops the target \-This method closes the data threads (if they exist) then closes the session. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 214 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_abe0602fd40e54c1ff92d7310897072ac}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!remove\-Observer@{remove\-Observer}}
+\index{remove\-Observer@{remove\-Observer}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{remove\-Observer}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::remove\-Observer (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{observer\-\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_abe0602fd40e54c1ff92d7310897072ac}
+
+
+\-Removes the observer. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em observer\-\_\-id} & \-The \-I\-D of the observer to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-False if the observer isn't in the observers list, \-True if it was correctly removed 
+\end{DoxyReturn}
+
+
+\-Definition at line 141 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a9d6334d4c1ada8dae518f56ccf8fddab}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!set\-Param@{set\-Param}}
+\index{set\-Param@{set\-Param}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{set\-Param}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::set\-Param (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{identifier, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a9d6334d4c1ada8dae518f56ccf8fddab}
+
+
+\-Interface to set a single param. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em identifier} & \-The identifier string to get the param to update \\
+\hline
+{\em value} & \-The value to set to the param \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 268 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a2a8d46776e9b4c03081bb4426d849517}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!set\-Parameters@{set\-Parameters}}
+\index{set\-Parameters@{set\-Parameters}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{set\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::set\-Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{params}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a2a8d46776e9b4c03081bb4426d849517}
+
+
+\-Sends new parameters to the server. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em params} & \-The array of parameters to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 256 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_ab0cfc0e5b6ac03cf654879045d7b9a13}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!setup\-\_\-data\-\_\-threads@{setup\-\_\-data\-\_\-threads}}
+\index{setup\-\_\-data\-\_\-threads@{setup\-\_\-data\-\_\-threads}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{setup\-\_\-data\-\_\-threads}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::setup\-\_\-data\-\_\-threads (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{sample\-\_\-time, }
+\item[{}]{decimation = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_ab0cfc0e5b6ac03cf654879045d7b9a13}
+
+
+\-Setups the queue and the threads needed to read the data stream. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em sample\-\_\-time} & \-The sample time of the signal \\
+\hline
+{\em decimation} & \-The decimation to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 73 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a9a61f08b90d8512663f2c74545943228}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!start@{start}}
+\index{start@{start}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::start (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a9a61f08b90d8512663f2c74545943228}
+
+
+\-Starts the connected target. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 222 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_aadaa0ae2a3535637dde24e5a822e50e7}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!start\-Data@{start\-Data}}
+\index{start\-Data@{start\-Data}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{start\-Data}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::start\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{signal\-\_\-number, }
+\item[{}]{sample\-\_\-time, }
+\item[{}]{decimation = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_aadaa0ae2a3535637dde24e5a822e50e7}
+
+
+\-Starts data transfer for the specified signal. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em signal\-\_\-number} & \-The number of the signal to start \\
+\hline
+{\em sample\-\_\-time} & \-The sample time of the signal \\
+\hline
+{\em decimation} & \-The decimation to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 230 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a7a472990dd9d3b1d7c0d3f2aa63ec7a1}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!stop@{stop}}
+\index{stop@{stop}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::stop (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a7a472990dd9d3b1d7c0d3f2aa63ec7a1}
+
+
+\-Stops target server. 
+
+\-This method, called on a master server, calls connector\-::\-Connector\-::stop\-Server and called on slave, calls connector\-::\-Connection\-::stop\-Slave \begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 189 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_ae0dd80c9557257d45fbae2d7d7a18ddf}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!stop\-\_\-data\-\_\-threads@{stop\-\_\-data\-\_\-threads}}
+\index{stop\-\_\-data\-\_\-threads@{stop\-\_\-data\-\_\-threads}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{stop\-\_\-data\-\_\-threads}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::stop\-\_\-data\-\_\-threads (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_ae0dd80c9557257d45fbae2d7d7a18ddf}
+
+
+\-Stops the data threads. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 97 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a3419fad652e47f0e1b6adbd7c2f3c76c}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!stop\-Data@{stop\-Data}}
+\index{stop\-Data@{stop\-Data}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{stop\-Data}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::target\-::\-Target\-::stop\-Data (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{signal\-\_\-number = {\ttfamily \-None}, }
+\item[{}]{all\-\_\-data = {\ttfamily \-False}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1target_1_1_target_a3419fad652e47f0e1b6adbd7c2f3c76c}
+
+
+\-Stops (all) data transfers. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em signal\-\_\-number} & \-The number of signal to catch \\
+\hline
+{\em all\-\_\-data} & \-If \-True calls \-Stop\-All\-Data(). \-Calls \-Stop\-Data() if \-False. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The boolean result of the operation 
+\end{DoxyReturn}
+
+
+\-Definition at line 238 of file target.\-py.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classpyrtai_1_1target_1_1_target_a81312c5e774f702d956b5e21f76b8d48}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!config@{config}}
+\index{config@{config}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::config}}}
+\label{classpyrtai_1_1target_1_1_target_a81312c5e774f702d956b5e21f76b8d48}
+
+
+\-A \hyperlink{classpyrtai_1_1configurator_1_1_configurator}{configurator\-::\-Configurator} object. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_ab10614e38c19644cfbd81ec3424df5c7}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!connection@{connection}}
+\index{connection@{connection}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::connection}}}
+\label{classpyrtai_1_1target_1_1_target_ab10614e38c19644cfbd81ec3424df5c7}
+
+
+\-A \hyperlink{classpyrtai_1_1connector_1_1_connector}{connector\-::\-Connector} instance used to send commands to \-X\-M\-L-\/\-R\-P\-C connection. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a2e3d692af2e90764b0835991cf538568}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!datastream\-\_\-collector@{datastream\-\_\-collector}}
+\index{datastream\-\_\-collector@{datastream\-\_\-collector}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{datastream\-\_\-collector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::datastream\-\_\-collector}}}
+\label{classpyrtai_1_1target_1_1_target_a2e3d692af2e90764b0835991cf538568}
+
+
+\-The \-Data\-Collector thread. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a6f53ef231f9caced4bc8ee94404f4550}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!datastream\-\_\-poller@{datastream\-\_\-poller}}
+\index{datastream\-\_\-poller@{datastream\-\_\-poller}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{datastream\-\_\-poller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::datastream\-\_\-poller}}}
+\label{classpyrtai_1_1target_1_1_target_a6f53ef231f9caced4bc8ee94404f4550}
+
+
+\-The \-Data\-Poller thread. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a0d458e6387a385c285b33a87e645caee}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!datastream\-\_\-queue@{datastream\-\_\-queue}}
+\index{datastream\-\_\-queue@{datastream\-\_\-queue}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{datastream\-\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::datastream\-\_\-queue}}}
+\label{classpyrtai_1_1target_1_1_target_a0d458e6387a385c285b33a87e645caee}
+
+
+\-The queue where \-Data\-Collector thread puts data and observers get it. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a615b77c2475db26f9055078ab7f15f75}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!is\-\_\-connected@{is\-\_\-connected}}
+\index{is\-\_\-connected@{is\-\_\-connected}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{is\-\_\-connected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::is\-\_\-connected}}}
+\label{classpyrtai_1_1target_1_1_target_a615b77c2475db26f9055078ab7f15f75}
+
+
+\-Checks if the \hyperlink{classpyrtai_1_1target_1_1_target}{\-Target} is connected or not. 
+
+\-Actually the status is simply set bu \hyperlink{classpyrtai_1_1target_1_1_target_a8f84994a13eda611de5dc4dc357ba060}{connect()} and \hyperlink{classpyrtai_1_1target_1_1_target_a6b88fd3e02bd52f9d9596aecaa15414d}{disconnect()} 
+
+\-Definition at line 37 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_a38d056a202885bac1459328108d600fa}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!is\-\_\-slave@{is\-\_\-slave}}
+\index{is\-\_\-slave@{is\-\_\-slave}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{is\-\_\-slave}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::is\-\_\-slave}}}
+\label{classpyrtai_1_1target_1_1_target_a38d056a202885bac1459328108d600fa}
+
+
+\-Shows if this is a slave target. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+\hypertarget{classpyrtai_1_1target_1_1_target_aae04036f71a3a512b5461bf97692e7e9}{
+\index{pyrtai\-::target\-::\-Target@{pyrtai\-::target\-::\-Target}!parameters@{parameters}}
+\index{parameters@{parameters}!pyrtai::target::Target@{pyrtai\-::target\-::\-Target}}
+\subsubsection[{parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::target\-::\-Target\-::parameters}}}
+\label{classpyrtai_1_1target_1_1_target_aae04036f71a3a512b5461bf97692e7e9}
+
+
+\-The target parameters. 
+
+
+
+\-Definition at line 37 of file target.\-py.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/drwolf/\-Devel/py\-R\-T\-A\-I/pyrtai/\hyperlink{target_8py}{target.\-py}\end{DoxyCompactItemize}

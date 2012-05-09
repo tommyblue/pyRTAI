@@ -1,0 +1,290 @@
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator}{
+\section{pyrtai\-:\-:configurator\-:\-:\-Configurator \-Class \-Reference}
+\label{classpyrtai_1_1configurator_1_1_configurator}\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+}
+
+
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator}{\-Configurator} class handles config values.  
+
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classpyrtai_1_1configurator_1_1_configurator_ae3c0f806987595f13595605d21cb2631}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\begin{DoxyCompactList}\small\item\em \-The constructor reads the config file, which can be passed as param. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1configurator_1_1_configurator_ac3a2ae60e843ca40da8b5d244b93ceab}{set\-Attr}
+\begin{DoxyCompactList}\small\item\em \-Sets member vars. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1configurator_1_1_configurator_a74ab3f8a787c67efaad0e439f71ef685}{get\-Attr}
+\begin{DoxyCompactList}\small\item\em \-Gets member vars from \-\_\-\-\_\-dict\-\_\-\-\_\- or from the config file if not previously assigned. \end{DoxyCompactList}\item 
+def \hyperlink{classpyrtai_1_1configurator_1_1_configurator_a8e80cc32ad6606ce9b93ba6f91502892}{get\-Url}
+\begin{DoxyCompactList}\small\item\em \-Get the full \-Url to connect to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_ae42c9eb42092cf27af6c48236b61eefd}{config}
+\begin{DoxyCompactList}\small\item\em \-The \-Config\-Parser instance. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_a9ff2397a8a72f28ee03fc9100e1f4417}{protocol}
+\begin{DoxyCompactList}\small\item\em \-The protocol to use to connect to the server (\-H\-T\-T\-P/\-H\-T\-T\-P\-S) \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_a884de51005a6b3daa58935e55b401007}{address}
+\begin{DoxyCompactList}\small\item\em \-The address to connect to. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_a23c3696bef9aa98f3fccd2a855ef62bb}{port}
+\begin{DoxyCompactList}\small\item\em \-The port to connect to. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_af98f7cb1e0a1cb7295780106e675643c}{host}
+\begin{DoxyCompactList}\small\item\em \-The host to connect to. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_acf7ca48f9329be8ff83e4846bbb252f9}{session\-\_\-id}
+\begin{DoxyCompactList}\small\item\em \-The session name. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_a7040ca7952d5959b2248250c43d77762}{slave\-\_\-port}
+\begin{DoxyCompactList}\small\item\em \-The port to be used to connect to slave server. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_a3b5b4f82644bd96cd5432c2b742899e0}{slave\-\_\-data\-\_\-port}
+\begin{DoxyCompactList}\small\item\em \-The port to be used to connect to slave data stream. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_af1c86542bd418acd02cd9a9a01740458}{target\-\_\-name}
+\begin{DoxyCompactList}\small\item\em \-The name of the target server. \end{DoxyCompactList}\item 
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator_aac15edb3cdccee5dbbc4f41d33fd2047}{is\-\_\-slave\-\_\-connection}
+\begin{DoxyCompactList}\small\item\em \-Booblean value which indicates if it's a slave connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{classpyrtai_1_1configurator_1_1_configurator}{\-Configurator} class handles config values. 
+
+\-The default action is to check if the value exists then return it or return the value parsed from the config file otherwise. \-The default file is defaults.\-cfg but a different one can be passed as parameter to the constructor. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_ae3c0f806987595f13595605d21cb2631}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::configurator\-::\-Configurator\-::\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{config\-\_\-file = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1configurator_1_1_configurator_ae3c0f806987595f13595605d21cb2631}
+
+
+\-The constructor reads the config file, which can be passed as param. 
+
+\-Raises a \-Rtai\-Config\-Error if the file can't be found. 
+\begin{DoxyParams}{\-Parameters}
+{\em config\-\_\-file} & \-The path to the config file. \-If not specified is used defaults.\-cfg in the script directory \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_a74ab3f8a787c67efaad0e439f71ef685}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!get\-Attr@{get\-Attr}}
+\index{get\-Attr@{get\-Attr}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{get\-Attr}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::configurator\-::\-Configurator\-::get\-Attr (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1configurator_1_1_configurator_a74ab3f8a787c67efaad0e439f71ef685}
+
+
+\-Gets member vars from \-\_\-\-\_\-dict\-\_\-\-\_\- or from the config file if not previously assigned. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em key} & \-The name of the member var to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The value of the var. \-None if not present in the \-\_\-\-\_\-dict\-\_\-\-\_\- or in the config file 
+\end{DoxyReturn}
+
+
+\-Definition at line 82 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_a8e80cc32ad6606ce9b93ba6f91502892}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!get\-Url@{get\-Url}}
+\index{get\-Url@{get\-Url}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{get\-Url}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::configurator\-::\-Configurator\-::get\-Url (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1configurator_1_1_configurator_a8e80cc32ad6606ce9b93ba6f91502892}
+
+
+\-Get the full \-Url to connect to. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Returns the address of the target server, e.\-g. \href{http://192.168.1.1:29500}{\tt http\-://192.\-168.\-1.\-1\-:29500} 
+\end{DoxyReturn}
+
+
+\-Definition at line 99 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_ac3a2ae60e843ca40da8b5d244b93ceab}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!set\-Attr@{set\-Attr}}
+\index{set\-Attr@{set\-Attr}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{set\-Attr}]{\setlength{\rightskip}{0pt plus 5cm}def pyrtai\-::configurator\-::\-Configurator\-::set\-Attr (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}}
+\label{classpyrtai_1_1configurator_1_1_configurator_ac3a2ae60e843ca40da8b5d244b93ceab}
+
+
+\-Sets member vars. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em key} & \-The name of the var \\
+\hline
+{\em value} & \-The value to assign to the var \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-The value of the assigned var 
+\end{DoxyReturn}
+
+
+\-Definition at line 75 of file configurator.\-py.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_a884de51005a6b3daa58935e55b401007}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!address@{address}}
+\index{address@{address}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::address}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_a884de51005a6b3daa58935e55b401007}
+
+
+\-The address to connect to. 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_ae42c9eb42092cf27af6c48236b61eefd}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!config@{config}}
+\index{config@{config}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::config}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_ae42c9eb42092cf27af6c48236b61eefd}
+
+
+\-The \-Config\-Parser instance. 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_af98f7cb1e0a1cb7295780106e675643c}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!host@{host}}
+\index{host@{host}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{host}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::host}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_af98f7cb1e0a1cb7295780106e675643c}
+
+
+\-The host to connect to. 
+
+\-It can be built using \-P\-R\-O\-T\-O\-C\-O\-L\-://\-A\-D\-D\-R\-E\-S\-S\-:\-P\-O\-R\-T 
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_aac15edb3cdccee5dbbc4f41d33fd2047}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!is\-\_\-slave\-\_\-connection@{is\-\_\-slave\-\_\-connection}}
+\index{is\-\_\-slave\-\_\-connection@{is\-\_\-slave\-\_\-connection}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{is\-\_\-slave\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::is\-\_\-slave\-\_\-connection}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_aac15edb3cdccee5dbbc4f41d33fd2047}
+
+
+\-Booblean value which indicates if it's a slave connection. 
+
+\-It's a master collection if \-False 
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_a23c3696bef9aa98f3fccd2a855ef62bb}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!port@{port}}
+\index{port@{port}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::port}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_a23c3696bef9aa98f3fccd2a855ef62bb}
+
+
+\-The port to connect to. 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_a9ff2397a8a72f28ee03fc9100e1f4417}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!protocol@{protocol}}
+\index{protocol@{protocol}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{protocol}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::protocol}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_a9ff2397a8a72f28ee03fc9100e1f4417}
+
+
+\-The protocol to use to connect to the server (\-H\-T\-T\-P/\-H\-T\-T\-P\-S) 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_acf7ca48f9329be8ff83e4846bbb252f9}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!session\-\_\-id@{session\-\_\-id}}
+\index{session\-\_\-id@{session\-\_\-id}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{session\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::session\-\_\-id}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_acf7ca48f9329be8ff83e4846bbb252f9}
+
+
+\-The session name. 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_a3b5b4f82644bd96cd5432c2b742899e0}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!slave\-\_\-data\-\_\-port@{slave\-\_\-data\-\_\-port}}
+\index{slave\-\_\-data\-\_\-port@{slave\-\_\-data\-\_\-port}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{slave\-\_\-data\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::slave\-\_\-data\-\_\-port}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_a3b5b4f82644bd96cd5432c2b742899e0}
+
+
+\-The port to be used to connect to slave data stream. 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_a7040ca7952d5959b2248250c43d77762}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!slave\-\_\-port@{slave\-\_\-port}}
+\index{slave\-\_\-port@{slave\-\_\-port}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{slave\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::slave\-\_\-port}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_a7040ca7952d5959b2248250c43d77762}
+
+
+\-The port to be used to connect to slave server. 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+\hypertarget{classpyrtai_1_1configurator_1_1_configurator_af1c86542bd418acd02cd9a9a01740458}{
+\index{pyrtai\-::configurator\-::\-Configurator@{pyrtai\-::configurator\-::\-Configurator}!target\-\_\-name@{target\-\_\-name}}
+\index{target\-\_\-name@{target\-\_\-name}!pyrtai::configurator::Configurator@{pyrtai\-::configurator\-::\-Configurator}}
+\subsubsection[{target\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pyrtai\-::configurator\-::\-Configurator\-::target\-\_\-name}}}
+\label{classpyrtai_1_1configurator_1_1_configurator_af1c86542bd418acd02cd9a9a01740458}
+
+
+\-The name of the target server. 
+
+
+
+\-Definition at line 48 of file configurator.\-py.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/drwolf/\-Devel/py\-R\-T\-A\-I/pyrtai/\hyperlink{configurator_8py}{configurator.\-py}\end{DoxyCompactItemize}
