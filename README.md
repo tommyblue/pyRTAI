@@ -92,8 +92,7 @@ Use the helper **Target::setParam** using **block_name + param_name** as identif
 
 ### Signal structure
 
-signals = target.getSignalStructure()
-
+    signals = target.getSignalStructure()
     # Channel 0
     channel = signals[0]['number']
     # channel == signal_number
