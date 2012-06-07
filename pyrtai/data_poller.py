@@ -60,14 +60,14 @@ class DataPoller(Thread):
                 if line:
                     # TODO: ID_canale puo' essere negativo (LED)
                     splitted_line = line.split(" ")
-                    print(line)
+
                     structured_data = {}
                     id_number = int(splitted_line[1]) + (65535*self.cycle)
                     structured_data['id'] = id_number
-                    structured_data['traces'] = splitted_line[2]
-                    structured_data['channel'] = (splitted_line[0] if splitted_line[0] else None)
+                    structured_data['traces'] = splitted_line[2:]
+                    structured_data['channel'] = (int(splitted_line[0]) if splitted_line[0] else None)
                     ## Time calculation using cycle number
-                    structured_data['time'] = (float(splitted_line[1]) * self.decimation * self.sample_time)
+                    structured_data['time'] = (float(id_number) * float(self.decimation) * float(self.sample_time))
                     
                     # Increments cycle
                     if int(splitted_line[1]) == 65535:

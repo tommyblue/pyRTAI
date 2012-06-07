@@ -8,4 +8,4 @@ class TestObserver:
         self.data = data
         
     def printLine(self, data):
-        print "ID: %s\nTraces: %f\nTime: %f\n" % (data['id'], data['traces'], data['time'])
+        print "ID:{0}\nTraces: {1}\nTime: {2}\n".format(data['id'], data['traces'], data['time'])
