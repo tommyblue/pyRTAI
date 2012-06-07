@@ -35,6 +35,7 @@ class DataCollector(Thread):
 		
 		# Reads from the socket until the 'endSocket' line
 		while not self.done:
+			#print line_buffer
 			if '\n' in line_buffer:
 				splitted = line_buffer.split('\n')
 				for i in range(len(splitted)):

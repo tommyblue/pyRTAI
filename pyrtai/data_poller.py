@@ -37,8 +37,7 @@ class DataPoller(Thread):
         if decimation:
             self.decimation = decimation
         else:
-            self.decimation = 1.0
-            
+            self.decimation = 1.0    
         self.sample_time = float(sample_time)
         Thread.__init__(self)
         self.name = "DataPoller"
@@ -48,6 +47,7 @@ class DataPoller(Thread):
         # Poison
         self.queue.insert(0, None)
         self.done = True
+        #self.stopObservers()
         
     ## Gets the stream from the queue and notifies the observers
     def run(self):
@@ -104,6 +104,13 @@ class DataPoller(Thread):
         
         return new_observer['id']
     
+    ## Removes the observer
+    # @param observer_id The ID of the observer to remove
+    # @return False if the observer isn't in the observers list, True if it was correctly removed
+    def stopObservers(self):
+        for observer in self.observers:
+          observer['method'](None)
+                
     ## Removes the observer
     # @param observer_id The ID of the observer to remove
     # @return False if the observer isn't in the observers list, True if it was correctly removed
