@@ -41,6 +41,9 @@ class Connector:
         except socket.error:
             print('Error connecting to the server, check network')
             return False
+        except:
+            print('Error connecting to the server, check network')
+            return False
 
     ## Connect to Slave server
     # @return The boolean result of the operation
