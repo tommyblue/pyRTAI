@@ -165,7 +165,10 @@ class Target:
             else:
                 return False
         else:
-            result = self.connection.Connection_Request(password) # Passing self.config to let the Connector set some connection data (e.g. the session_id)
+            if password:
+                result = self.connection.Connection_Request(password) # Passing self.config to let the Connector set some connection data (e.g. the session_id)
+            else:
+                result = self.connection.Connection_Request()
             self.is_connected = result
             return result
 

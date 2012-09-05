@@ -25,6 +25,7 @@ class Connector:
     def Connection_Request(self, password = None):
         try:
             self.connection = ServerProxy(self.config.getUrl())
+            print("Connecting to %s" % self.config.getUrl())
             if password:
                 req = self.connection.Connection_Request(self.config.getAttr('target_name'), password)
             else:
