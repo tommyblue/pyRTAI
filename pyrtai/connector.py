@@ -31,10 +31,12 @@ class Connector:
             else:
                 req = self.connection.Connection_Request(self.config.getAttr('target_name'))
             if req['state'] == 0:
+                print("Connected!")
                 self.config.setAttr('session_id', req['id_session'])
                 self.config.setAttr('slave_port', req['port'])
                 return True
             else:
+                print("Error connecting to target")
                 return False
         except socket.error:
             print('Error connecting to the server, check network')
