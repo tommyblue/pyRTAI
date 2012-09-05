@@ -43,6 +43,7 @@ class DataPoller(Thread):
             self.decimation = 1.0
         Thread.__init__(self)
         self.name = "DataPoller"
+        self.daemon = True
 
     ## Sets sample time
     # @param sample_time The sample time of the signal

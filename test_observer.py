@@ -8,6 +8,7 @@ class TestObserver(Thread):
     def __init__(self, timeout = 0):
         Thread.__init__(self)
         self.name = 'Observer'
+        self.daemon = True
         self.timeout = timeout
         self.initial_time = time.time()
         self.data = None

@@ -20,6 +20,7 @@ class DataCollector(Thread):
         self.queue = queue
         Thread.__init__(self)
         self.name = 'DataCollector'
+        self.daemon = True
         #self.socket = socket.create_connection( (address, port) )
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # Setto 1 secondo di timeout per evitare che rimanga appeso quando il server
