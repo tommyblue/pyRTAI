@@ -23,7 +23,7 @@ class TestObserver(Thread):
         print "ID:{0}\nTraces: {1}\nTime: {2}\n".format(self.data['id'], self.data['traces'], self.data['time'])
         print("DELTA: %f" % (float(wait_time) - float(self.data['time'])))
       #else:
-      #  self.cylce += 1
+      #  self.cycle += 1
     
     def run(self):
       while(True):
